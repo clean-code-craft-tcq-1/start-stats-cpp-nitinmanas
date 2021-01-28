@@ -5,7 +5,7 @@ Stats info = {0,0,0};
 info.min = vect[0];
 for (int i=0; i<vect.size(); i++)
 {
-  info.avg = (vect[i]+info.avg);
+  info.average = (vect[i]+info.average);
   if(info.max<vect[i])
   {
     info.max = vect[i];
@@ -15,6 +15,6 @@ for (int i=0; i<vect.size(); i++)
     info.min=vect[i];
   }
  }
- info.avg/=vect.size();
+ info.average/=vect.size();
  return info;    
 }
