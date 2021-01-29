@@ -8,7 +8,7 @@ Stats info = {0,0,0};
     {
        if(0 == (isnan(vect[i])))
        {
-        info.avg = (vect[i]+info.avg);
+        info.average = (vect[i]+info.average);
         if(info.max<vect[i])
          {
             info.max = vect[i];
@@ -20,15 +20,16 @@ Stats info = {0,0,0};
        }
        else
        {
-           info.avg=0;
+           info.average=0;
            info.max=0;
            info.min=0;
            info.notNumber=1;
            break;
        }
     }
-    info.avg/=vect.size();
+    info.average/=vect.size();
     return info;
+}
 
 
 
