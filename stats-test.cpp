@@ -23,7 +23,7 @@ TEST_CASE("average is NaN for empty array") {
     REQUIRE(std::abs(computedStats.average - 0.0) < epsilon);
     REQUIRE(std::abs(computedStats.max - 0.0) < epsilon);
     REQUIRE(std::abs(computedStats.min - 0.0) < epsilon);
-    REQUIRE(std::abs(computedStats.notNumber = 1);
+    REQUIRE(std::abs(computedStats.notNumber - 1) < epsilon);
 }
 
 /*TEST_CASE("raises alerts when max is greater than threshold") {
