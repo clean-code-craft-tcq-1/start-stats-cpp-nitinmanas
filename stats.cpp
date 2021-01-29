@@ -1,7 +1,7 @@
 #include "stats.h"
 
 Stats Statistics::ComputeStatistics(const std::vector<float>&vect ) {    
-stat info = {0,0,0};
+Stats info = {0,0,0};
     info.min = vect[0];
     int i=0;
     for (int i=0; i<vect.size(); i++)
